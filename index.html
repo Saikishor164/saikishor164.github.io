@@ -34,10 +34,82 @@
                     <img src="images/user.png" >
                 </div>
                 <div class="about-col-2">
-                    <h1>About Me</h1>
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a Web Developer who is working to 
+                        bring something new in this industry. 
+                        Worked with many languages and frameworks
+                        . I am very well known for Front-End Web 
+                        Developer in Azam Campus & currently 
+                        working as a Web Developer in Azam IT 
+                        Department of Azam Campus. Worked on 
+                        Frontend & Backend program.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')" >Experience</p>
+                            <p class="tab-links" onclick="opentab('education')" >Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Wordpress</span> <br>Development</li>
+                                <li><span>HTML & CSS</span> <br>JavaScript</li>
+                                <li><span>Graphic </span> <br>Designing</li>
+                                <li><span>Responsive </span> <br>Web Design</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>April 2022 - Present </span> <br>Web Developer</li>
+                                <li>MCE Scoiety Azam Campus - Azam I.T Department</li>
+                                <hr>
+                                <li><span>October 2021 - March 2022</span> <br>Web Developer & Graphic Designer</li>
+                                <li>P.A.Inamdar College of Visual Effects, Design & Arts.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2017</span> <br>10th SSC </li>
+                                <li>Guru Nanak Public School </li>
+                                <li><span>2019</span> <br>12th HSC </li>
+                                <li>Guru Nanak Public School & Jr College</li>
+                                <li><span>2022 </span> <br>Bachelor of Computer Application, B.B.A(ca)</li>
+                                <li>Abeda Inamdar Senior College </li>
+                            </ul>
+                        </div>
                 </div>
             </div>
         </div>
     </div>
+
+<!-- --------------------services --------------------- -->
+
+    <div class="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                
+            </div>
+        </div>
+    </div>
+
+<script>
+    
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+</script>
+
+
 </body>
 </html>
