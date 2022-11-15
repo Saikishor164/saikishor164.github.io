@@ -72,7 +72,7 @@ nav ul li a:hover::after{
 }
 
 .header-text h1 span{
-    color: #ffa500;
+    color: #FFED00;
 }
 
 /* ---------About --------- */
@@ -197,7 +197,7 @@ nav ul li a:hover::after{
 }
 
 .services-list div:hover{
-    background: #dd5c06;
+    background: #FFED00;
     transform: translateY(-10px);
     
 }
@@ -225,4 +225,40 @@ nav ul li a:hover::after{
     width: 100%;
     border-radius: 10px;
     display: block;
+}
+
+.layer{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.6), #FFED00);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.logo.arrow {
+    margin-top: px;
+    color: #FFED00;
+    text-decoration: none;
+    font-size: 40px;
+    line-height: 60px;
+    background: #fff;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    text-align: center;
 }
