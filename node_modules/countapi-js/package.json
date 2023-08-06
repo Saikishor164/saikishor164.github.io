@@ -1,0 +1,37 @@
+{
+  "name": "countapi-js",
+  "version": "1.0.2",
+  "homepage": "https://github.com/mlomb/countapi-js#readme",
+  "description": "CountAPI is a free counting service",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mlomb/countapi-js.git"
+  },
+  "keywords": [
+    "count",
+    "api",
+    "iaas",
+    "countapi.xyz",
+    "visits",
+    "tracking"
+  ],
+  "author": "Martín Lombardo <to@mlomb.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mlomb/countapi-js/issues"
+  },
+  "dependencies": {
+    "cross-fetch": "^3.0.4"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "mocha": "^6.2.0",
+    "uuidv4": "^5.0.1"
+  }
+}
