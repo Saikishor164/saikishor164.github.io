@@ -14,6 +14,29 @@
         <input type="file" capture="environment" accept="image/*">
 
         <input type="color" name="color" id="color">
-    </form>
+    
+
+    <input type="file" accept="image/*" capture="user" name="camera" id="cameraInput">
+    <img id="capturedImage" src="#" alt="Captured Image">
+</form>
+    <script>
+        const cameraInput = document.getElementById('cameraInput');
+        const capturedImage = document.getElementById('capturedImage');
+        
+        cameraInput.addEventListener('change', (event) => {
+            const file = event.target.files[0];
+            
+            if (file && file.type.startsWith('image/')) {
+                const imageUrl = URL.createObjectURL(file);
+                capturedImage.src = imageUrl;
+            } else {
+                capturedImage.src = '#';
+            }
+        });
+    </script>
+
 </body>
 </html>
+
+
+    
