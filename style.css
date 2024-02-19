@@ -50,7 +50,7 @@ nav ul li a::after{
     content: '';
     width:0;
     height: 3px;
-    background: #0229BF;
+    background: #FFED00;
     position:absolute;
     left: 0;
     bottom: -6px;
@@ -72,7 +72,7 @@ nav ul li a:hover::after{
 }
 
 .header-text h1 span{
-    color: #0229BF;
+    color: #FFED00;
     stroke: #fff;
     stroke-width: 2%;
     border: #fff;
@@ -129,7 +129,7 @@ nav ul li a:hover::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #0229BF;
+    background: #FFED00;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -204,11 +204,14 @@ nav ul li a:hover::after{
 }
 
 .services-list div:hover{
-    background: #0229BF;
+    background: #FFED00;
     transform: translateY(-10px);
+    color: #080808;
     
 }
-
+.services-list div a:hover{
+    color: #080808;
+}
 /* -------------------portfolio------------------- */
 
 #portfolio{
@@ -238,7 +241,7 @@ nav ul li a:hover::after{
 .layer{
     width: 100%;
     height: 0%;
-    background: linear-gradient(rgba(0,0,0,0.6), #0229BF);
+    background: linear-gradient(rgba(0,0,0,0.6), #FFED00);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -275,7 +278,7 @@ nav ul li a:hover::after{
 
 .logo.arrow {
     margin-top: 20px;
-    color: #0229BF;
+    color: #FFED00;
     text-decoration: none;
     font-size: 40px;
     line-height: 60px;
@@ -311,7 +314,7 @@ nav ul li a:hover::after{
     margin: 50px auto;
     display: block;
     width: fit-content;
-    border: 1px solid #0229BF;
+    border: 1px solid #FFED00;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
@@ -320,7 +323,7 @@ nav ul li a:hover::after{
 }
 
 .btn:hover{
-    background: #0229BF;
+    background: #FFED00;
     color: #080808;
 }
 
@@ -342,29 +345,59 @@ nav ul li a:hover::after{
 }
 
 .contact-left p i{
-    color: #0229BF;
+    color: #FFED00;
     margin-right: 15px;
     font-size: 25px;
 }
 
 
+.social-icons {
+    margin-top: 30px;
+}
+
+.social-icons a {
+    padding-top: 50px;
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 35px;
+    color: #ababab;
+    display: inline-block;
+    animation: bounce 1s infinite alternate; /* Added animation */
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+.social-icons a:hover {
+    color: #FFED00;
+    animation: none; /* Disable animation on hover */
+}
+
+/* 
 .social-icons{
     margin-top: 30px;
 }
 
 .social-icons a{
+    padding-top: 50px;
     margin-right: 20px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 35px;
     color: #ababab;
     transition: transform 0.5s;
     display: inline-block;
 }
 
 .social-icons a:hover{
-    color: #0229BF;
+    color: #FFED00;
     transform: translateY(-5px);
-}
+} */
 
 .btn.btn2{
     display: inline-block;
@@ -377,7 +410,7 @@ nav ul li a:hover::after{
 }
 
 .btn.btn2:hover{
-    background: #0229BF;
+    background: #FFED00;
     color: #080808;
 }
 
@@ -411,4 +444,10 @@ form .btn.btn2{
     background: #262626;
     color: #ababab;
     font-size: 18px;
+}
+
+.copyright a{
+    color: #FFED00;
+    text-decoration: none;
+    font-weight: 500;
 }
