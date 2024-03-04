@@ -21,6 +21,14 @@
       {
         "meta-refresh": "off"
       }
+    ],
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "width: fit-content"
+        ]
+      }
     ]
   }
 }
