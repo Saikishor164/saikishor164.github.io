@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background: #080808;
     color: #fff;
@@ -450,4 +454,79 @@ form .btn.btn2{
     color: #FFED00;
     text-decoration: none;
     font-weight: 500;
+}
+
+/* ----------CSS FOR SMALL SCREEN ----------- */
+
+nav .fas{
+    display: none;
+}
+
+
+@media only screen and (max-width: 600px){
+
+    #header{
+        background-image: url(images/phone-background.png);
+    }
+
+    .header-text h1{
+        font-size: 30px;
+    }
+
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    nav .fas{
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul{
+        position: fixed;
+        width: 200px;
+        height: 100vh;
+        background: #FFED00;
+        top: 0;
+        right: -200px;
+        /* text-align: center; */
+        transition: all 0.5s;
+        z-index: 2;
+        padding-top: 50px;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .sub-title{
+        font-size: 40px;
+    }
+
+    .about-col-1,  .about-col-2 img{
+        flex-basis: 100%;
+    }
+    
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+
+    .copyright{
+        font-size: 14px;
+    }
+}
+
+
+#msg{
+    color:#61b752;
+    margin-top: -40px;
+    display: block;
 }
