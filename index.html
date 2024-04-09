@@ -10,6 +10,7 @@
     <link rel="icon" type="image/x-icon" href="/images/favicon.jpg">
 </head>
 <body>
+<div id="cursor-circle"></div>
     <div id="header">
         <div class="container">
             <nav>
@@ -261,7 +262,21 @@ var sidemenu = document.getElementById("sidemenu");
         .catch(error => console.error('Error!', error.message))
     })
   </script>
-
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          const cursorCircle = document.getElementById('cursor-circle');
+        
+          document.addEventListener("mousemove", function(event) {
+            const x = event.clientX;
+            const y = event.clientY;
+        
+            cursorCircle.style.left = x - 15 + 'px'; // Adjust position to center circle on cursor
+            cursorCircle.style.top = y - 15 + 'px'; // Adjust position to center circle on cursor
+          });
+        });
+        
+        
+            </script>
 </body>
 </html>
 

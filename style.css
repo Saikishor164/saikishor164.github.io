@@ -530,3 +530,16 @@ nav .fas{
     margin-top: -40px;
     display: block;
 }
+
+
+#cursor-circle {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid grey; /* Transparent border */
+    pointer-events: none; /* Ensure the circle doesn't interfere with cursor events */
+    z-index: 9999; /* Ensure the circle is on top of other elements */
+  }
