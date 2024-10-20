@@ -60,3 +60,20 @@ footer {
     font-size: 28px;
   }
 }
+
+
+
+header ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+}
+header ul li {
+  margin: 0;
+}
+header ul a {
+  color: #fff;
+  text-decoration: none;
+}
+
